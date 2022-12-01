@@ -9,11 +9,10 @@ import (
 	"github.com/gorilla/mux"
 
 	"golang-api/src/routes"
-	"golang-api/src/utils"
 )
 
 func main() {
-	utils.Config()
+	Config()
 
 	r := mux.NewRouter()
 	api := r.PathPrefix("/api").Subrouter()
